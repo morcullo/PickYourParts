@@ -1,2 +1,27 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+hr {
+  border-top: 5px solid #eeeeee;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pricing {
+    position: absolute;
+    padding: 5px;
+    top: 10px;
+    right: 25px;
+    background-color: white;
+    border-radius:5px;
+}
+
+.pricing h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2c3e50;
+}
