@@ -2,12 +2,25 @@
 @import "bootstrap";
 
 hr {
-  border-top: 5px solid #eeeeee;
+  border-top: 3px solid #eeeeee;
 }
 
 img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  background-color: #111;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.col-sm-4 {
+  margin-bottom: 10px;
 }
 
 .pricing {
@@ -24,4 +37,47 @@ img {
   margin-bottom: 5px;
   font-weight: bold;
   color: #2c3e50;
+}
+
+.product-container {
+  border-radius: 2px;
+  background-color: #f2f2f2;
+  overflow: auto;
+
+}
+
+.product-info {
+  max-width: 230px;
+  width: 45%;
+  text-align: center;
+  padding: 10px;
+}
+
+.product-info p {
+  margin-bottom: 0px;
+}
+
+.col-sm-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.product-image {
+  width: 55%;
+  float: right;
+}
+
+.category {
+  background-color: #333;
+  color: white;
+}
+
+.price {
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px;
+  width: 75px;
+  margin-left: auto;
+  margin-right: auto;
 }
