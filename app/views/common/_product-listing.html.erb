@@ -1,9 +1,21 @@
-<div class="col-sm-3">
-  <div class="product-container">
-    <%= image_tag product.image%>
-    <div class="product-info">
-      <p class="name"><%= product.name %></p>
-      <h4>$<%= product.price %></h4>
+<div class="col-sm-10">
+  <h3><%= heading %></h3>
+  <% @products.each_slice(4) do |products| %>
+    <div class="row">
+      <% products.each do |product| %>
+        <div class="col-sm-3">
+          <div class="product-container">
+            <%= image_tag product.image%>
+            <div class="product-info">
+              <p class="name"><%= product.name %></p>
+              <h4>$<%= product.price %></h4>
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
+  <% end %>
+  <div class="col-sm-12 text-center">
+    <%= paginate @products %>
   </div>
 </div>
