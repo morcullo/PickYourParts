@@ -5,7 +5,7 @@
   <div class="col-sm-10">
     <h3>All Products</h3>
     <% @products.each_slice(4) do |products| %>
-      <div class="row clearfix">
+      <div class="row">
         <% products.each do |product| %>
           <%= render partial: 'common/product-listing', locals: {product: product} %>
         <% end %>
