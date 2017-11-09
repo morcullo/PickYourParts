@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'category/:id', to: 'category#show', as: 'category', id: /\d+/
 
+  get 'products', to: 'home#index'
+  get 'home', to: 'home#index'
   root to: 'home#index'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
