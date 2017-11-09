@@ -2,10 +2,12 @@
 @import "bootstrap";
 
 body {
-  background-color: #eee;
+
 }
+
 hr {
   border-top: 3px solid #222;
+  margin: 10px 0px;
 }
 
 img {
@@ -23,7 +25,8 @@ img {
 }
 
 .product-container {
-
+  margin: 5px;
+  border: 1px solid #eee;
 }
 
 .product-info {
@@ -57,10 +60,7 @@ padding: 0px;
 }
 
 h3 {
-  background-color: #222;
-  color: white;
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 10px;
   margin-bottom: 0px;
 }
 
@@ -76,4 +76,5 @@ h3 {
 
 .categories .categories-header {
   font-size: 16px;
+  padding: 5px;
 }
