@@ -1,0 +1,9 @@
+<div class="categories">
+  <h3 class="categories-header">Categories</h3>
+  <hr>
+  <ul>
+    <% @categories.each do |category| %>
+      <li><a href="#"><%= category.name %></a></li>
+    <% end %>
+  </ul>
+</div>
