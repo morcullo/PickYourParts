@@ -8,25 +8,32 @@
       </ul>
     </div> -->
 
+  <div class="col-sm-2">
+    <div class="categories">
+      <h3 style="font-size: 16px;">Categories</h3>
+      <ul>
+        <% @categories.each do |category| %>
+          <li><a href="#"><%= category.name %></a></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 
-  <h1>All Products</h1>
-  <hr>
-
-  <% @products.each_slice(3) do |products| %>
-    <div class="row">
-      <% products.each do |product| %>
-        <div class="col-sm-4">
-          <div class="product-container">
-            <div class="product-image">
-              <%= image_tag product.image, :class => "pull-right" %>
-            </div>
-            <div class="product-info">
-              <!--<p class="category"><%= product.category.name %></p>-->
-              <h4><%= product.name %></h4>
-              <p class="price">$<%= product.price %></p>
+  <div class="col-sm-10">
+    <h3>All Products</h3>
+    <% @products.each_slice(4) do |products| %>
+      <div class="row">
+        <% products.each do |product| %>
+          <div class="col-sm-3">
+            <div class="product-container">
+              <%= image_tag product.image%>
+              <div class="product-info">
+                <p class="name"><%= product.name %></p>
+                <h4>$<%= product.price %></h4>
+              </div>
             </div>
           </div>
-        </div>
-      <% end %>
-    </div>
-  <% end %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
