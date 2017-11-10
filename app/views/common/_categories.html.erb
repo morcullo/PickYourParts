@@ -1,8 +1,8 @@
-<div class="col-sm-2">
+<div class="col-sm-3">
   <div class="dropdown">
     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Sort By Category
     <span class="caret"></span></button>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu dropdown-menu-right">
       <% @categories.each do |category| %>
         <li><%= link_to category.name, category%></li>
       <% end %>

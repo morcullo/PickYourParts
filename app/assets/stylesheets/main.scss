@@ -2,7 +2,7 @@
 @import "bootstrap";
 
 body {
-
+  min-width: 400px;
 }
 
 #logo {
@@ -60,6 +60,11 @@ padding: 0px;
   border: 30px solid white;
 }
 
+.col-sm-3 .dropdown {
+  text-align: right;
+  margin: 10px 20px;
+}
+
 .row {
   margin: 0px;
 }
@@ -98,4 +103,42 @@ h3 {
 
 .open {
   padding: 0px;
+}
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.navbar-brand > img {
+  display: inline;
+}
+
+.dropdown .btn {
+  margin-bottom: 0px;
+}
+
+.btn-default {
+    margin: 10px 0px;
+
+}
+
+.btn-default:hover {
+  color: #090808;
+  background-color: #76c2af;
+  border-color: #000000;
+}
+
+@media (max-width: 768px) {
+  #myCarousel {
+    display: none;
+  }
+
+  .col-sm-2 .dropdown {
+    margin: 5px;
+}
 }
