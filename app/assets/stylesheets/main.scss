@@ -122,12 +122,15 @@ h3 {
   margin-bottom: 0px;
 }
 
-.btn-default {
+.nav .btn-default {
     margin: 10px 0px;
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
 
 }
 
-.btn-default:hover {
+.nav .btn-default:hover {
   color: #090808;
   background-color: #76c2af;
   border-color: #000000;
