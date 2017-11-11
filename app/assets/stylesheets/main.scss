@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 body {
+  font-family: "Oswald", sans-serif;
   min-width: 400px;
 }
 
@@ -28,7 +29,6 @@ img {
 
 .navbar-inverse .navbar-brand {
   color: white;
-  font-family: 'Oswald', sans-serif;
   font-size: 20px;
 }
 
@@ -130,7 +130,7 @@ h3 {
 }
 
 .nav .btn-default {
-    margin: 10px 0px;
+    margin: 8px 0px;
     color: #fff;
     background-color: #333;
     border-color: #333;
@@ -144,7 +144,7 @@ h3 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Oswald", sans-serif;
+
 }
 
 @media (max-width: 768px) {
