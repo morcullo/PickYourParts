@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 body {
   min-width: 400px;
@@ -27,6 +28,8 @@ img {
 
 .navbar-inverse .navbar-brand {
   color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
 }
 
 .product-container {
@@ -140,6 +143,10 @@ h3 {
   border-color: #000000;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+}
+
 @media (max-width: 768px) {
   #myCarousel {
     display: none;
@@ -147,5 +154,11 @@ h3 {
 
   .col-sm-2 .dropdown {
     margin: 5px;
+  }
 }
+
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 0px;
+  }
 }
