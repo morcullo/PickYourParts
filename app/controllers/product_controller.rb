@@ -1,0 +1,15 @@
+class ProductController < ApplicationController
+  def show
+  end
+
+  def edit
+  end
+
+  def search_results
+    wildcard_keywords = '%' + params[:search_keywords] + '%'
+    @products = Product.where("name LIKE ?", wildcard_keywords)
+    @products += Product.where("description LIKE ?", wildcard_keywords)
+    @categories = Category.all
+    @products = Kaminari.paginate_array(@products).page(params[:page]).per(8)
+  end
+end

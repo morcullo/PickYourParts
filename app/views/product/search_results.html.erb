@@ -1,0 +1,9 @@
+<%= render partial: 'common/page-heading', locals: {:heading=> "Search Results"} %>
+<%= render partial: 'common/categories', locals: {categories: @categories} %>
+<% if @products.size.zero? %>
+  <div class="col-sm-12">
+    <p>No products found</p>
+  </div>
+<% else %>
+  <%= render partial: 'common/product-listing'%>
+<% end %>

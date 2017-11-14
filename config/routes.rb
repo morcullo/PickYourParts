@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'product/show'
+
+  get 'product/edit'
+
+  get 'search_results' => 'product#search_results', as: 'search_results'
+
   get 'category/:id', to: 'category#show', as: 'category', id: /\d+/
 
   get 'products', to: 'home#index'
