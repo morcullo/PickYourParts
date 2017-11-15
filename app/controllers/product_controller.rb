@@ -1,5 +1,6 @@
 class ProductController < ApplicationController
   def show
+    @categories = Category.all
   end
 
   def edit

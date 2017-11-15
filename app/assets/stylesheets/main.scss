@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
 
 body {
   font-family: "Oswald", sans-serif;
@@ -28,8 +29,11 @@ img {
 }
 
 .navbar-inverse .navbar-brand {
+  font-family: "Rajdhani";
   color: white;
   font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .product-container {
@@ -86,7 +90,7 @@ padding: 0px;
 h3 {
   padding: 10px;
   margin-bottom: 0px;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 .categories {
@@ -116,14 +120,7 @@ h3 {
   padding: 0px;
 }
 
-.navbar-brand {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    text-align: center;
-    margin: auto;
-}
+
 
 .navbar-brand > img {
   display: inline;
@@ -147,8 +144,8 @@ h3 {
   border-color: #000000;
 }
 
-h1, h2, h3, h4, h5, h6 {
-
+h1, h2, h3, h5, h6 {
+  font-family: "Rajdhani";
 }
 
 #search {
