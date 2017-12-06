@@ -1,6 +1,9 @@
 <div class="col-sm-6">
-  <%= image_tag("8700k") %>
+  <%= image_tag @product.image%>
 </div>
 <div class="col-sm-6">
-  <h1>Intel Core i7 8700k</h1>
+  <h1 style="font-weight:bold;"><%= @product.name %></h1>
+  <h1 style="margin-top:0px;"><%= @product.price %></h1>
+  <p><%= @product.description %></p>
+  <button type="button" class="btn btn-default">Add to Cart</button>
 </div>
